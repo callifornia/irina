@@ -1,0 +1,13 @@
+.img-title.ng-hide-add {
+    opacity:1;
+}
+.img-title.ng-hide-add.ng-hide-add-active {
+    opacity:0;    
+}
+.img-title.ng-hide-remove {
+    opacity:0;
+}
+.img-title.ng-hide-remove.ng-hide-remove-active {
+    opacity:1;
+    transition: 1.25s;
+}

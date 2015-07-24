@@ -1,0 +1,13 @@
+<div class = "row">
+    <div class = "col-md-12 container-main">
+        <div class ="cancel">
+                <img ng-click = "cancel()" class = "img-cancel" src="img/modal/cancel.png"
+                            onmouseover="this.src='img/modal/cancel_hover.png';" onmouseout="this.src='img/modal/cancel.png';">
+                </div>
+                
+        <div ng-click="showPrev()" class = "pr"></div>
+        <div ng-click="showNext()" class = "nt"></div>
+        <img ng-repeat="item in items" src = "img/gallery/wedding/{{item.img_big}}" class = "img-title"
+                 ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)">
+    </div>
+</div> 

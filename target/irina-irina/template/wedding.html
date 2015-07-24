@@ -1,0 +1,26 @@
+<ng-include src = "'template/header.html'"></ng-include>
+
+<div class = "container-fluid blog-general-fluid-bg">
+    <div class = "container content-pages-margin">
+        <div class = "row">
+            <div class = "col-md-12">
+                 <p class ="text-center about-me-text">Wedding gallery</p>
+                <div class = "about-title-line"></div>
+            </div>
+        </div>
+        <div ng-repeat = "item in items" ng-click = "open(item)" 
+             class="ih-item square colored  effect4 wedding-gallery-img">       
+            <a href="">
+                <div class="img wedding-gallery-img-size">
+                    <img src="img/gallery/wedding/{{item.img_small}}">
+                </div>
+                <div class="mask1"></div>
+                <div class="mask2"></div>
+                <div class="info">
+                      <h3>Heading here</h3>
+                      <p>275 x 190 px</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

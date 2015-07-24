@@ -1,0 +1,593 @@
+.new-container-main{
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+/* wedding */
+.gallery-ul-list{
+    height: 100%;
+/*
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3; 3 is just placeholder -- can be anything
+*/
+}
+.wedding-gallery-img-size{
+    height: 100%;
+}
+.wedding-gallery-img{
+    position: relative;
+    width: 275px !important;
+    height: 189px !important;
+    border: 0px solid #fff !important;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    float: left !important;
+    margin-bottom: 10px !important;
+    margin-right: 10px !important;
+   
+}
+.valign-top{
+    vertical-align: top;
+
+}
+.gallery-ul-list li{
+   display: inline-block;
+   padding-bottom: 20px;   
+    
+}
+.image-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.image-card img {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.zoom-effect-container:hover .image-card img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+
+
+.pic img:hover{
+  width: 400px;
+  height: 400px;
+    
+
+}
+.pic img{
+-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+}
+
+/**/
+.pr{
+    color: antiquewhite;
+    height: 100%;
+    float: left;
+    width: 68px;
+    background-image: url('../img/modal/left.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.pr:hover{
+      background-image: url('../img/modal/left_hover.png');
+    cursor: pointer;
+}
+.img-cancel:hover{
+    cursor: pointer;
+}
+.nt{
+    color: antiquewhite;
+    height: 100%;
+    float: right;
+    width: 37px;
+    background-image: url('../img/modal/right.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+.nt:hover{
+      background-image: url('../img/modal/right_hover.png');
+    cursor: pointer;
+}
+.container-navi{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.container-main{
+    height: 100%;
+    
+    position: absolute !important;
+    text-align: center;
+}
+.cancel{
+    text-align: right;
+    position: absolute;
+    width: 100%;
+    padding-right: 35px;
+    padding-top: 15px;
+}
+.img-cancel{
+    height: 35px;
+    width: 35px; 
+}
+.img-back{
+    float:left;
+}
+.img-title{
+    height:100%;
+    width: auto;
+    max-width: 90%;
+}
+
+.modal-lg {
+  width: 100% !important;
+    height: 100%;
+    
+}
+.container-gallery{
+}
+.modal-dialog {
+  margin: 0px auto !important;
+}
+.modal-content{
+/*    background-image: url('../img/modal/bg.png') !important;*/
+    background-repeat: repeat !important;
+    border-radius: 0px !important;
+      position: absolute !important;
+      width: 100%;
+      height: 100% !important;
+    top: 0px !important;
+    left: 0px !important;
+    right: 0px !important;
+    bottom: 0px !important;
+    background-color: black;
+}
+
+
+.blog-padding-left{
+    padding-left: 50px;
+}
+/**/
+.text-title{
+    font-size: 48px;
+}
+.footer-ul li a{
+    color: rgb(220, 220, 220);
+}
+.footer-ul li a:hover{
+        color: #DDDDFF;
+}
+.header-menu-margin{
+   padding-left: 68px;
+}
+.header-menu{
+       padding-left: 96px;
+    padding-top: 86px;
+}
+.header-logo{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.about-me-text{
+      font-size: 16px;
+  letter-spacing: 5px;
+}
+.blog-article-date{
+    color: rgb(190, 190, 190);
+}
+.blog-view-img-margin{
+    margin-bottom: 10px;
+}
+.blog-articles{
+    margin-bottom: 50px;
+}
+.blog-img{
+    text-align: center;
+    width: 100%;
+}
+.gallery-img:hover{
+    opacity: 0.6;    
+    cursor: pointer;
+    z-index: 999;
+}
+.general-margin{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-margin{
+    margin-top: 45px;
+}
+.about-text{
+    text-indent: 25px;
+    font-size: 16px;
+}
+.about-title-line{
+  border-bottom: 2px solid silver;
+  width: 9%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.about-title-line-private{
+  border-bottom: 2px solid silver;
+  width: 24%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.general-carusel{
+    margin-top: -20px;
+}
+.header-logo-img{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.general-line{
+    margin-left: 9px;
+    margin-bottom: 35px;
+}
+.contact-mail-img{
+    float: left;
+    margin-right: 25px;
+    margin-top: 8px;
+}.contact-phone-img{
+    float: left;
+    margin-right: 25px;
+    margin-top: 13px;
+}
+.about-margin-bottom{
+    padding-bottom: 100px;
+}
+.content-pages-margin{
+    padding-bottom: 100px;
+    margin-top: 25px;
+}
+.img-re{
+    float: left;
+    margin-right: 50px;
+}
+.text-title-second{
+    font-size: 48px;
+}
+.client-callback{
+    margin-bottom: 25px;
+}
+.footer-page{
+    background-color: #420C09;;
+    
+      padding-top: 20px;
+  padding-bottom: 20px;
+}
+.about-margin-top{
+    margin-top: 100px;
+}
+.footer-title{
+    color: rgb(110, 110, 110);
+    font-size: 22px;
+    margin-top: 15px;
+}
+.aboute-img{
+    float: left;
+    margin-left: 17px;
+}
+.footer-text{
+    font-size: 12px;
+    color: silver;
+    margin-top: 40px;
+  margin-bottom: 40px;
+}
+.footer-line{
+    border-top: 1px solid gray;
+    padding-top: 5px;
+  
+}
+
+.client-feetback{
+    margin-bottom: 50px
+}
+.blog-general-bg{
+    background-color: white;
+      padding-left: 41px;
+  padding-right: 25px;
+}
+.blog-margin{
+    margin-bottom: 50px;
+    float: left;
+}
+.blog-general-fluid-bg{
+    background-image: url('../img/general/bg.png');
+    background-repeat: repeat;
+}
+.footer-left-side{
+      padding-left: 55px;
+    margin-top: 10px;
+}
+.menu{
+    padding-bottom: 25px;
+    margin-top: 21px;
+}
+
+.heade-icon{
+    margin-top: 11px;
+    margin-right: 5px;
+}
+.heade-icon:hover{
+    text-decoration: none;
+}
+.header-icon-a:hover{
+    text-decoration: none;
+}
+.header-test{
+    text-align: right;
+}
+
+.footer-right-side{
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.footer-logo{
+    padding-left: 69px;
+    padding-top: 0px;
+} 
+.general-container{
+    text-align: center;
+    width: 1334px;
+    margin: auto;
+    margin-top: 25px;
+}
+.header-general-container{
+    width: 1318px;
+    margin: auto;
+}
+
+
+.contact-phone-number{
+    margin-top: 8px;
+      font-size: 18px;
+}
+.contact-skype-name{
+    margin-top: 11px;
+    font-size: 18px;
+}
+.contact-phone-icon{
+    float: left;
+    margin-right: 25px;
+}
+.contact-skype-icon{
+    float: left;
+    margin-right: 20px;
+}
+
+/* footer contact */
+.contact-phone-icon-footer{
+    float: left;
+    margin-right: 25px;
+}
+
+.contact-phone-number-footer{
+    margin-top: 8px;
+      font-size: 17px;
+    color: gainsboro;
+}
+.contact-skype-name-footer{
+    margin-top: 11px;
+     font-size: 17px;
+    color: gainsboro;
+}
+
+.contact-skype-icon-footer{
+    float: left;
+    margin-right: 20px;
+    
+}
+
+/* /footer contact */
+
+.contact-wrtie-to-me{
+margin-left: 171px;
+  font-size: 23px;
+}
+
+.container-fluid-replace{
+    padding-left: 0px;
+    padding-right: 0px;
+    background-image: url('../img/general/bg.png');
+    background-repeat: repeat;
+    padding-bottom: 50px;
+}
+
+/* blog */
+.blog-view-ul{
+    list-style: none;
+      padding-left: 0px;
+}
+.blog-view-ul li{
+    display: inline-block;
+    margin: 0px;
+        width: 46%;
+    margin-bottom: 8px;
+}
+.blog-view-my-img{
+    height: 234px;
+    width: 384px;
+    margin-right: -4px;
+    border: none;
+}
+.blog-view-img-marging{
+    margin-top: 50px;
+}
+
+.blog-view-my-img.ih-item{
+    box-shadow: none;
+    !important; 
+    border: none;
+    !important; 
+    width: 384px;
+    !important;
+    height: 234px;
+    !important; 
+    margin-right: -4px;
+    !important; 
+    margin-bottom: -5px;
+    !important; 
+}
+ /* /blog */
+
+/* general page */
+.gallery-ul{
+    list-style: none;
+    padding-left: 0px;
+}
+.general-margin-top{
+    margin-top: 100px;
+}
+.gallery-ul li{
+    display: inline-block;
+  margin: 0px;
+  /* padding: 5px; */
+  padding-right: 4px;
+  padding-bottom: 10px; 
+}
+.general-gallery-img{
+    height: 193px;
+    margin-right: -4px;
+    border: none;
+}
+
+.general-my-img.ih-item{
+/*
+    box-shadow: none;
+    !important; 
+    border: none;
+    !important; 
+    width: 193px;
+    !important; 
+    height: 191px;
+    !important; 
+    margin-right: -4px;
+    !important; 
+    margin-bottom: -5px;
+    !important; 
+*/
+    
+      width: 214px;
+  height: 191px;
+  margin-bottom: -5px;
+      border: 1px solid white;
+}
+
+.general-second-container-text{
+   margin-top: 70px;
+}
+.general-center{
+    text-align: center;
+}
+
+.nav>li>a:hover{
+    background: none;
+    text-decoration: underline;
+}
+
+
+
+
+.blog-button{
+    margin-top: -43px;
+}
+.blog-view-right-side-button-view{
+   
+      margin-top: -15px;
+}
+
+.menu-li a{
+    color: rgb(78, 78, 78);
+    font-size: 16px;
+}
+
+.contact-title-line{
+    border-bottom: 1px solid rgb(242, 237, 237);
+    margin-top: 17px;
+    margin-bottom: 50px;
+}
+.contact-textarea{
+    resize: vertical;
+}
+#gallery{
+   padding: 0px;
+}
+#gallery li{
+      display: inline-block;
+      margin: 0 1em 1em 0;
+      width: 10em;
+      list-style-type: none;
+      text-align: center;
+}
+.sub-menu li a{
+    font-size: 14px;
+    padding-bottom: 0px;
+    height: 35px;
+    border: none;
+  
+}
+.love-story-img{
+    width: 20%;
+    float: left;
+}
+.love-story-div-img{
+    float: left;
+    border: 1px solid red;
+}
+.blog-view-right-side-img{
+    width: 98%;
+}
+.line{
+    border-bottom: 1px solid rgb(242, 237, 237);
+    margin-top: 40px;
+    margin-bottom: 28px;
+}.blog-line{
+    border-bottom: 1px solid rgb(199, 199, 199);
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+.footer-instagram-img{
+    margin-left: 8px;
+}
+.blog-img{
+    float: left;
+    margin-right: 25px;
+}
+.menu-li-drop{
+    font-size: 16px;
+}
+.blog-text{
+    
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+    font-size: 12px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    
+    font-size: 12px;
+}
+.blog-title a{
+    color: #0B3A05;
+    font-family: Marck Script;
+
+}
+.blog-title-view{
+    color: rgb(90, 90, 90);
+    font-family: Marck Script;
+}

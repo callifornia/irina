@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="application" ng-controller = "titleController">
+    <head>
+        <meta charset="utf-8" http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{Page.title()}}</title>
+        <!-- Bootstrap core CSS -->
+        <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-theme.css" rel="stylesheet">
+        <link href="css/ihover.css" rel="stylesheet">
+        <link href="css/carousel.css" rel="stylesheet">
+     
+        <link href="css/ng-animation.css" rel="stylesheet">
+        <link href="css/animation.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/angular-bootstrap-lightbox.css">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <ng-view></ng-view>
+        <!-- footer -->
+        <ng-include src = "'template/footer.html'"></ng-include>
+        <!-- libraries -->
+        <script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="js/angular/angular.1.4.2.js"></script>
+        <script type="text/javascript" src="js/angular/angular-route.1.4.2.js"></script>
+        <script type="text/javascript" src="js/angular/angular-animate.js"></script>
+        <script type="text/javascript" src="js/angular/angular-touch.js"></script>
+        
+        <script type="text/javascript" src="js/angular/angular-scroll.js"></script>
+           
+        <script src="js/angular/angular-bootstrap-lightbox.js"></script>
+        
+        <script type="text/javascript" src="js/application/app.js"></script>
+        <script type="text/javascript" src="js/application/route.js"></script> 
+        
+        <script type="text/javascript" src="js/application/services/page.js"></script>
+        <script type="text/javascript" src="js/application/services/imageFactory.js"></script>
+     
+     
+        <script type="text/javascript" src="js/application/controllers/modalController.js"></script>
+        <script type="text/javascript" src="js/application/controllers/modalBlogController.js"></script>
+        <script type="text/javascript" src="js/application/controllers/modalWeddingController.js"></script>
+        <script type="text/javascript" src="js/application/controllers/modalPrivateController.js"></script>
+        
+        <script type="text/javascript" src="js/application/controllers/generalController.js"></script>
+        <script type="text/javascript" src="js/application/controllers/aboutController.js"></script>
+        <script type="text/javascript" src="js/application/controllers/blogController.js"></script>
+        <script type="text/javascript" src="js/application/controllers/loveController.js"></script>
+        <script type="text/javascript" src="js/application/controllers/contactController.js"></script>
+        <script type="text/javascript" src="js/application/controllers/graduationController.js"></script>
+        <script type="text/javascript" src="js/application/controllers/privateController.js"></script>
+        <script type="text/javascript" src="js/application/controllers/weddingController.js"></script>
+        <script type="text/javascript" src="js/application/controllers/titleController.js"></script>
+        <script type="text/javascript" src="js/application/controllers/blogViewController.js"></script>
+        <script type="text/javascript" src="js/angular/ui-bootstrap-tpls.0.12.0.min.js"></script>
+    </body>
+</html>
