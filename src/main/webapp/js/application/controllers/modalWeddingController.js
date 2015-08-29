@@ -1,7 +1,18 @@
 (function(){
     var modalWeddingController = function($scope, imageFactory){
         
-    $scope.items = imageFactory.getWeddingPageImage;
+    $scope.items;    
+        
+    getItems();
+    function getItems(){
+        imageFactory.getWeddingPhoto()
+            .success(function(data, status, headers, config){
+                $scope.items = data;
+            })
+            .error(function(data, status, headers, config){
+                $scope.status = 'Unable to load data' + status;
+            })
+    ;}       
         
     getItemIndex = function(){
         for(var i = 0; i < $scope.items.length; i++){

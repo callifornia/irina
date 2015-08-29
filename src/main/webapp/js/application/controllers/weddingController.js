@@ -1,9 +1,21 @@
 (function(){
     var weddingController = function($scope, Page, imageFactory, $modal){
         Page.setTitle('Весільная фотосесія');
-        $scope.items = imageFactory.getWeddingPageImage;  
-        
+        $scope.items;
         $scope.select;
+        
+        getItems();
+             
+        function getItems(){
+            imageFactory.getWeddingPhoto()
+                .success(function(data, status, headers, config){
+                    $scope.items = data;
+                })
+                .error(function(data, status, headers, config){
+                    $scope.status = 'Unable to load data' + status;
+                })
+        ;}
+        
         $scope.open = function(index){
             $scope.select = index;
             var modalInstance;

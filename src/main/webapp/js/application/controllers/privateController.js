@@ -1,7 +1,19 @@
 (function(){
     var privateController = function($scope, Page, imageFactory, $modal){
         Page.setTitle('Приватна  фотосесія');
-        $scope.items = imageFactory.getWeddingPageImage;  
+        $scope.items;
+        getItems();
+        function getItems(){
+            imageFactory.getPrivatePhoto()
+                .success(function(data, status, headers, config){
+                    $scope.items = data;
+                })
+                .error(function(data, status, headers, config){
+                    $scope.status = 'Unable to load data' + status;
+                })
+        ;}  
+        
+        
         
         $scope.select;
         $scope.open = function(index){

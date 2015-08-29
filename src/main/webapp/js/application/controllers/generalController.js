@@ -1,10 +1,24 @@
 (function(){
-    var generalController = function($scope, Page, imageFactory, $modal){
+    var generalController = function($scope, Page, imageFactory, $modal, $http){
         Page.setTitle('Головна сторiнка');
-          
-        $scope.items = imageFactory.getGeneralPageImage;
-        
+        $scope.status;
+        $scope.items;
         $scope.select;
+        
+        getItems();
+             
+        
+        function getItems(){
+            imageFactory.getGeneralPhoto()
+                .success(function(data, status, headers, config){
+                    $scope.items = data;
+                })
+                .error(function(data, status, headers, config){
+                    $scope.status = 'Unable to load data' + status;
+                })
+        ;}
+        
+        
         $scope.open = function(index){
             $scope.select = index;
             var modalInstance;
@@ -26,6 +40,6 @@
         
     }; // generalController
     
-    generalController.$inject = ['$scope', 'Page', 'imageFactory', '$modal'];
+    generalController.$inject = ['$scope', 'Page', 'imageFactory', '$modal', '$http'];
     application.controller('generalController', generalController);
 }());

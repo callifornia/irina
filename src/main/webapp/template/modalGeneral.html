@@ -12,7 +12,7 @@
         </div>
         <div ng-click="showNext()" class = "nt"></div>
         <img ng-repeat="item in items" 
-        	src = "{{item.img_big}}" 
+        	src = "{{item.url_big_img}}" 
         	class = "img-title"
             ng-swipe-right="showPrev()" ng-swipe-left="showNext()" ng-show="isActive($index)">
     </div>
